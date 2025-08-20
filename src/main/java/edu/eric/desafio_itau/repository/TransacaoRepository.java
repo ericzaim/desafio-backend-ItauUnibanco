@@ -15,6 +15,10 @@ public class TransacaoRepository {
         transacoes.put(transacaoModel.getId(),transacao);
     }
 
+    public void deleteAll(){
+        transacoes.clear();
+    }
+
     public TransacaoModel toModel(TransacaoDto transacao){
         TransacaoModel transacaoModel = new TransacaoModel(UUID.randomUUID(),transacao.getValor(),transacao.getDataHora());
         return transacaoModel;

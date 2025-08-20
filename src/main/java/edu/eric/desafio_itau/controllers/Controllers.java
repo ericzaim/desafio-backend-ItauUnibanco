@@ -19,4 +19,10 @@ public class Controllers {
         this.transacaoService.create(transacao);
         return HttpStatus.OK;
     }
+
+    @DeleteMapping("/transacao")
+    public HttpStatus delete(){
+        this.transacaoService.deleteAll();
+        return HttpStatus.OK;
+    }
 }
