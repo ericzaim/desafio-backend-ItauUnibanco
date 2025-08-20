@@ -19,6 +19,9 @@ public class TransacaoRepository {
         transacoes.clear();
     }
 
+    public Map<UUID,TransacaoDto> getAllTransacoes(){
+        return transacoes;
+    }
     public TransacaoModel toModel(TransacaoDto transacao){
         TransacaoModel transacaoModel = new TransacaoModel(UUID.randomUUID(),transacao.getValor(),transacao.getDataHora());
         return transacaoModel;

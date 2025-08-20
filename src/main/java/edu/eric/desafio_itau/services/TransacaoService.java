@@ -19,7 +19,6 @@ public class TransacaoService {
             this.transacaoRepository.create(transacao);
         }
     }
-
     public void deleteAll(){
         this.transacaoRepository.deleteAll();
     }
