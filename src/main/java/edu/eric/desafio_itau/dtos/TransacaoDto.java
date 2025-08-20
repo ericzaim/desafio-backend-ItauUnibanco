@@ -4,12 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 
 @AllArgsConstructor
 @Getter
 @Setter
 public class TransacaoDto {
     private double valor;
-    private LocalDateTime dataHora;
+    private OffsetDateTime dataHora;
 }
